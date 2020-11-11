@@ -16,8 +16,16 @@
         <ul>
             <li><a href="">About Us</a></li>
             <li><a href="">Careear</a></li>
-            <li><a href="">Departement</a></li>
-            <li><a href=""></a></li>
+            <li class="list_drp"><a href="">Department</a>
+                <div class="drp">
+                    <ul>
+                        <li><a href="">Marketing & PR</a></li>
+                        <li><a href="">Customer Success & Sales</a></li>
+                        <li><a href="">IT, Product, Data</a></li>
+                        <li><a href="">Finance & Administration</a></li>
+                    </ul>
+                </div>           
+            </li>
         </ul>
     </div>
    </header>
@@ -39,6 +47,15 @@
     <div class="card_one">
         <h4>For patient</h4>
         <h2>Find a doctor, book a visit and solve any health-related doubt</h2>
+        <select name="drop_List">
+            <option value="0">CHOOSE YOUR COUNTRY</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Chile">Chile</option>
+            <option value="Italy">Italy</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Poland">Poland</option>
+          </select>
         <img src="/img1.png" alt="img1">
     </div>
 
@@ -157,13 +174,17 @@
    <hr>
    <footer class="footer_">
 <div>
-    <p>We are leaders in 10 countries: <a href="">Poland</a> , <a href="">Turkey</a>, <a href="">Spain</a>, <a href="">Italy</a>, <a href="">Czech</a> <a href="">Republic</a>, <a href="">Mexico</a>, <a href="">Colombia</a>, <a href="">Brazil</a>, <a href="">Argentina</a> and <a href="">Chile</a>
+    <p>We are leaders in 10 countries: <a href="">Poland</a> , <a href="">Turkey</a>, <a href="">Spain</a>, <a href="">Italy</a>, <a href="">Czech</a> <a href="">Republic</a>, <a href="">Mexico</a>, <a href="">Colombia</a>, <a href="">Brazil</a>, <a href="">Argentina</a> and <a href="">Chine</a>
     </p>
 </div>
 <div>
     <p>This site uses cookies to deliver services in accordance with this Privacy Policy. You can specify the conditions for storing or accessing cookies on your browser.</p>
 </div>
 <div><p>www.docplanner.com © 2020</p> </div>
-   </footer>
+
+<button onclick="affiche()"> Click</button>
+</footer>
+  
+   <script src="/script.js"></script>
 </body>
 </html>

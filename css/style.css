@@ -9,7 +9,7 @@ header {
   position: sticky;
   top: 0;
   justify-content: space-around;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.19);
 }
 .logo {
   display: flex;
@@ -42,6 +42,45 @@ h1 {
 .navmenu li {
   margin: 0 20px;
 }
+
+.drp{
+display: none;
+padding-top: 10px;
+position: absolute;
+min-width: 300px;
+margin-left: -50px;
+background: #fff;
+box-shadow: 0 5px 10px 0 #d3cfc9;
+z-index: 1
+}
+
+
+.navmenu ul li:hover .drp{
+  display: block;
+  border-radius: 6px;
+
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  margin-top: 15px;
+  margin-left: auto;
+}
+.navmenu ul li:hover .drp ul{
+  display: block;
+ margin: 10px;
+ justify-content: center;
+}
+.navmenu ul li:hover .drp ul li{
+  display: block;
+ margin: 10px;
+ justify-content: center;
+}
+.navmenu ul li:hover .drp ul li a{
+  display: block;
+ margin: 0px 20px 10px 0px;
+ padding-left: auto;
+ justify-content: center;
+}
+
 .navmenu a {
   text-decoration: none;
   color: rgb(171, 171, 171);
@@ -117,6 +156,24 @@ h1 {
   margin-top: 20px;
   margin-left: 40px;
   margin-right: 60px;
+}
+.card_one select {
+  width: 160px;
+  height: 30px;
+  margin-left: 40px;
+  font-size: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  align-content: center;
+}
+.card_one select:hover {
+  width: 160px;
+  height: 30px;
+  margin-left: 40px;
+  font-size: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  background-color:rgb(171, 171, 171);
 }
 .card_two h2 {
   color: #ffffff;
@@ -335,14 +392,14 @@ h1 {
   font-weight: bold;
 }
 
-.footer_{
+.footer_ {
   text-align: center;
   font-size: 10px;
   color: rgb(116, 116, 116);
-text-decoration: none;
+  text-decoration: none;
 }
 
-.footer_ a{
+.footer_ a {
   text-decoration: none;
-  color:rgb(22, 98, 198) ;
+  color: rgb(22, 98, 198);
 }
